@@ -1,0 +1,31 @@
+[project]
+name = "foundationl_models"
+version = "1.0.0"
+requires-python = ">=3.12.11,<3.13"
+dependencies = [
+    "torch==2.8.0+cu126",
+    "torchvision==0.23.0+cu126",
+    "torchaudio==2.8.0+cu126",
+    "huggingface_hub[hf_xet]",
+    "accelerate",
+    "opencv-python",
+    "transformers",
+    "easyocr",
+    "scikit-image",
+    "scikit-learn",
+    "scipy",
+    "seaborn",
+    "ipywidgets",
+    "hdbscan",
+    "pip",
+    "setuptools",
+    "wheel",
+    "jupyterlab",
+    "notebook",
+    "ipykernel"
+]
+
+[tool.uv]
+index-url = "https://download.pytorch.org/whl/cu126"
+extra-index-url = ["https://pypi.org/simple"]
+index-strategy = "unsafe-best-match"
